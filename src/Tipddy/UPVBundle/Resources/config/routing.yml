@@ -1,0 +1,7 @@
+TipddyUPVBundle_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: TipddyUPVBundle:Default:index }
+
+TipddyUPVBundle_inscripcion:
+        resource: "@TipddyUPVBundle/Resources/config/routing/inscripcion.yml"
+        prefix:   /inscripcion

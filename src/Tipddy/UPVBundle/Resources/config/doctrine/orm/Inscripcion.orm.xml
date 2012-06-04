@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Inscripcion" table="inscripcion">
+    <change-tracking-policy>DEFERRED_IMPLICIT</change-tracking-policy>
+    <id name="idInscripcion" type="integer" column="id_inscripcion">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="nombre" type="string" column="nombre" length="20"/>
+    <field name="apellidos" type="string" column="apellidos" length="20"/>
+    <field name="rut" type="string" column="rut" length="10"/>
+    <field name="fechaNacimiento" type="date" column="fecha_nacimiento"/>
+    <field name="sexo" type="string" column="sexo" length="1"/>
+    <field name="emailPersonal" type="string" column="email_personal" length="20"/>
+    <field name="emailIntitucional" type="string" column="email_intitucional" length="20"/>
+    <field name="fonoFijo" type="string" column="fono_fijo" length="10"/>
+    <field name="fonoMovil" type="string" column="fono_movil" length="10"/>
+    <field name="sede" type="string" column="sede" length="20"/>
+    <field name="facultad" type="string" column="facultad" length="20"/>
+    <field name="carrera" type="string" column="carrera" length="20"/>
+    <field name="tituloProfesional" type="string" column="titulo_profesional" length="20"/>
+    <field name="gradoAcademico" type="string" column="grado_academico" length="20"/>
+    <lifecycle-callbacks/>
+  </entity>
+</doctrine-mapping>

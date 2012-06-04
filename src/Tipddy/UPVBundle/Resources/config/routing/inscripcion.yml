@@ -1,0 +1,30 @@
+inscripcion:
+    pattern:  /
+    defaults: { _controller: "TipddyUPVBundle:Inscripcion:index" }
+
+inscripcion_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "TipddyUPVBundle:Inscripcion:show" }
+
+inscripcion_new:
+    pattern:  /new
+    defaults: { _controller: "TipddyUPVBundle:Inscripcion:new" }
+
+inscripcion_create:
+    pattern:  /create
+    defaults: { _controller: "TipddyUPVBundle:Inscripcion:create" }
+    requirements: { _method: post }
+
+inscripcion_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "TipddyUPVBundle:Inscripcion:edit" }
+
+inscripcion_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "TipddyUPVBundle:Inscripcion:update" }
+    requirements: { _method: post }
+
+inscripcion_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "TipddyUPVBundle:Inscripcion:delete" }
+    requirements: { _method: post }

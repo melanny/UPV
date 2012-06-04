@@ -1,0 +1,123 @@
+<?php
+
+namespace Tipddy\UPVBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Tipddy\UPVBundle\Entity\Inscripcion
+ *
+ * @ORM\Table(name="inscripcion")
+ * @ORM\Entity
+ */
+class Inscripcion
+{
+    /**
+     * @var integer $idInscripcion
+     *
+     * @ORM\Column(name="id_inscripcion", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idInscripcion;
+
+    /**
+     * @var string $nombre
+     *
+     * @ORM\Column(name="nombre", type="string", length=20, nullable=true)
+     */
+    private $nombre;
+
+    /**
+     * @var string $apellidos
+     *
+     * @ORM\Column(name="apellidos", type="string", length=20, nullable=true)
+     */
+    private $apellidos;
+
+    /**
+     * @var string $rut
+     *
+     * @ORM\Column(name="rut", type="string", length=10, nullable=false)
+     */
+    private $rut;
+
+    /**
+     * @var date $fechaNacimiento
+     *
+     * @ORM\Column(name="fecha_nacimiento", type="date", nullable=true)
+     */
+    private $fechaNacimiento;
+
+    /**
+     * @var string $sexo
+     *
+     * @ORM\Column(name="sexo", type="string", length=1, nullable=true)
+     */
+    private $sexo;
+
+    /**
+     * @var string $emailPersonal
+     *
+     * @ORM\Column(name="email_personal", type="string", length=20, nullable=true)
+     */
+    private $emailPersonal;
+
+    /**
+     * @var string $emailIntitucional
+     *
+     * @ORM\Column(name="email_intitucional", type="string", length=20, nullable=true)
+     */
+    private $emailIntitucional;
+
+    /**
+     * @var string $fonoFijo
+     *
+     * @ORM\Column(name="fono_fijo", type="string", length=10, nullable=true)
+     */
+    private $fonoFijo;
+
+    /**
+     * @var string $fonoMovil
+     *
+     * @ORM\Column(name="fono_movil", type="string", length=10, nullable=true)
+     */
+    private $fonoMovil;
+
+    /**
+     * @var string $sede
+     *
+     * @ORM\Column(name="sede", type="string", length=20, nullable=true)
+     */
+    private $sede;
+
+    /**
+     * @var string $facultad
+     *
+     * @ORM\Column(name="facultad", type="string", length=20, nullable=true)
+     */
+    private $facultad;
+
+    /**
+     * @var string $carrera
+     *
+     * @ORM\Column(name="carrera", type="string", length=20, nullable=true)
+     */
+    private $carrera;
+
+    /**
+     * @var string $tituloProfesional
+     *
+     * @ORM\Column(name="titulo_profesional", type="string", length=20, nullable=true)
+     */
+    private $tituloProfesional;
+
+    /**
+     * @var string $gradoAcademico
+     *
+     * @ORM\Column(name="grado_academico", type="string", length=20, nullable=true)
+     */
+    private $gradoAcademico;
+
+
+}

@@ -1,0 +1,7 @@
+parameters:
+#    tipddy_upv.example.class: Tipddy\UPVBundle\Example
+
+services:
+#    tipddy_upv.example:
+#        class: %tipddy_upv.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
